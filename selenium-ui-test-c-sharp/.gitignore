@@ -1,0 +1,61 @@
+﻿# === Arquivos do Visual Studio ===
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.pdb
+*.log
+*.cache
+*.ilk
+*.obj
+*.pch
+*.pgc
+*.pgd
+*.rsp
+*.sdf
+*.tlog
+*.tmp
+*.vspscc
+*.vssscc
+
+# === Diretórios de Build ===
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# === Pacotes NuGet ===
+*.nupkg
+packages/
+!packages/build/
+
+# === Arquivos de configuração de usuário ===
+*.userprefs
+*.suo
+*.user
+*.csproj.user
+*.rsuser
+
+# === Arquivos de configuração sensíveis ===
+app.config
+web.config
+secrets.json
+*.env
+
+# === Configuração do Git ===
+*.orig
+
+# === Logs gerados pelo Selenium WebDriver ===
+chromedriver.log
+geckodriver.log
+
+# === Arquivos específicos do JetBrains Rider ===
+.idea/
+
+# === Arquivos temporários do macOS e Linux ===
+.DS_Store
+*.swp
+*.swo
+
+# === Ignorar pastas do projeto Selenium WebDriver ===
+selenium-ui-test-c-sharp/
+selenium-ui-test-c-sharp.sln

@@ -1,0 +1,30 @@
+#1 Selenium WebDriver | C#.Net | Workshop
+
+#c #seleniumwebdriver #visualstudio #testautomation #pageobjectmodel 
+Steps to setUp Webdriver in Visual Studio
+------------------------------------------------------------------
+1. Download and install Visual Studio 2022
+2. Install Latest version of .Net Framework ( If it is not installed)
+3. Open the Visual Studio and Create a Unit Test Project
+4. Create a Folder Structure for Selenium Webdriver Automation
+5. Go to Manage Nuget Packages and Install Required Selenium Libraries
+6. Clean and build the Solution.
+7. Create a Sample Test for Below Scenarios ( WebSite: https://demowebshop.tricentis.com/
+)
+
+##### Method 1 - Basic Test #####
+
+Test Scenario:  Validate the register functionality with valid data
+Step1 : Launch browser and navigate to site url
+Step2 :   
+Step 3: Click on register link
+Step 4: Verify the register page Title
+Step 5: Select the gender Male
+Step 6: Enter FirstName
+Step 7 : Enter lastname
+Step 8: Enter email address
+Step 9: Enter pAssword
+Step 10 . Enter confirm password
+Step 11 . Click register button
+Step 12. Verify the registration successfull message 
+Step 13. verify the email account at account
