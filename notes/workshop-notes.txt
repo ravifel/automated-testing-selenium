@@ -28,3 +28,18 @@ Step 10 . Enter confirm password
 Step 11 . Click register button
 Step 12. Verify the registration successfull message 
 Step 13. verify the email account at account
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+#2 Selenium WebDriver | C#.Net | Workshop
+
+##### Method 2 - Same Test with Page Object Model #####
+Create Page Classes
+Create Base Class - ( Re-usable Methods)
+Create Actual Test by calling Page Objects methods
+Run  the Test
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
