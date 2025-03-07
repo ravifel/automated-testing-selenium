@@ -1,8 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
-using System.Security.Cryptography.X509Certificates;
+using OpenQA.Selenium.Chrome;
 
 namespace selenium_ui_test_c_sharp
 {

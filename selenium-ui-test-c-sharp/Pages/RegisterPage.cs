@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 
 namespace selenium_ui_test_c_sharp.Pages
@@ -18,13 +14,49 @@ namespace selenium_ui_test_c_sharp.Pages
         }
 
         // Page Objects - For Web Elements
-        public static readonly By selectorGenderMale = By.Id("gender-male");
-        public static readonly By fieldFirstName = By.Id("FirstName");
-        public static readonly By fieldLastName = By.Id("LastName");
-        public static readonly By fieldEmail = By.Id("Email");
-        public static readonly By fieldPassword = By.Id("Password");
-        public static readonly By fieldPasswordConfirm = By.Id("ConfirmPassword");
-        public static readonly By btnRegister = By.Id("register-button");
-        public static readonly By messageResult = By.ClassName("result");
+        public static readonly By SelectorGenderMale = By.Id("gender-male");
+        public static readonly By FieldFirstName = By.Id("FirstName");
+        public static readonly By FieldLastName = By.Id("LastName");
+        public static readonly By FieldEmail = By.Id("Email");
+        public static readonly By FieldPassword = By.Id("Password");
+        public static readonly By FieldPasswordConfirm = By.Id("ConfirmPassword");
+        public static readonly By BtnRegister = By.Id("register-button");
+        public static readonly By MessageResult = By.ClassName("result");
+
+        // Page Methods
+        public void SelectGender()
+        {
+            driver.FindElement(SelectorGenderMale).Click();
+        }
+
+        public void EnterFirstName(String value)
+        {
+            driver.FindElement(FieldFirstName).SendKeys(value);
+        }
+
+        public void EnterLastName(String value)
+        {
+            driver.FindElement(FieldLastName).SendKeys(value);
+        }
+
+        public void EnterEmail(String value)
+        {
+            driver.FindElement(FieldEmail).SendKeys(value);
+        }
+
+        public void EnterPassword(String value)
+        {
+            driver.FindElement(FieldPassword).SendKeys(value);
+        }
+
+        public void EnterPasswordConfirm(String value)
+        {
+            driver.FindElement(FieldPassword).SendKeys(value);
+        }
+
+        public void ClickRegisterBtn()
+        {
+            driver.FindElement(BtnRegister).Click();
+        }
     }
 }
