@@ -21,7 +21,6 @@ namespace selenium_ui_test_c_sharp
         [TestMethod]
         public void TestMethod1()
         {
-
             try
             {
                 String title = driver.Title;
@@ -46,13 +45,11 @@ namespace selenium_ui_test_c_sharp
                 Assert.IsTrue(emailAccount.Displayed);
 
                 driver.FindElement(By.ClassName("ico-logout")).Click(); // Log out
-                
             }
-            catch (Exception e)
+            catch (Exception e)         
             {
                 Console.WriteLine(e.Message);
             }
-
         }
 
         [TestCleanup]

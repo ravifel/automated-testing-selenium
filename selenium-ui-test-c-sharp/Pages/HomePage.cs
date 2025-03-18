@@ -16,7 +16,20 @@ namespace selenium_ui_test_c_sharp.Pages
         public static readonly By registerLink = By.ClassName("ico-register");
         public static readonly By loginLink = By.ClassName("ico-login");
 
+        // Page Methods
+        public string GetTitle()
+        {
+            return driver.Title;
+        }
 
+        public void ClickRegisterLink()
+        {
+            driver.FindElement(registerLink).Click();
+        }
 
+        public void ClickLoginLink()
+        {
+            driver.FindElement(loginLink).Click();
+        }
     }
 }

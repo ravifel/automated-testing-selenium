@@ -8,7 +8,7 @@ namespace selenium_ui_test_c_sharp.Pages
         public static IWebDriver driver; // Instance of WebDriver
 
         // Create a constructor
-        RegisterPage(IWebDriver driver)
+        public RegisterPage(IWebDriver driver)
         {
             RegisterPage.driver = driver;
         }
@@ -22,8 +22,14 @@ namespace selenium_ui_test_c_sharp.Pages
         public static readonly By FieldPasswordConfirm = By.Id("ConfirmPassword");
         public static readonly By BtnRegister = By.Id("register-button");
         public static readonly By MessageResult = By.ClassName("result");
+        public static readonly By BtnLogout = By.ClassName("ico-logout");
 
         // Page Methods
+        public string GetTitle()
+        {
+            return driver.Title;
+        }
+
         public void SelectGender()
         {
             driver.FindElement(SelectorGenderMale).Click();
@@ -51,12 +57,27 @@ namespace selenium_ui_test_c_sharp.Pages
 
         public void EnterPasswordConfirm(String value)
         {
-            driver.FindElement(FieldPassword).SendKeys(value);
+            driver.FindElement(FieldPasswordConfirm).SendKeys(value);
         }
 
         public void ClickRegisterBtn()
         {
             driver.FindElement(BtnRegister).Click();
         }
+
+        public string GetSuccessfullMessage()
+        {
+            return driver.FindElement(MessageResult).Text;
+        }
+
+        public bool IsEmailAccountDisplayed(String email)
+        {
+            return driver.FindElement(By.XPath("//*[text()='" + email + "']")).Displayed;
+        }
+
+        public void ClickLogout()
+        {
+            driver.FindElement(BtnLogout).Click();
+        }
     }
-}
+} 
